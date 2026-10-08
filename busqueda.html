@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda de productos | TecnoShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">🛒 TecnoShop</a>
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito <span class="badge" id="contador-carrito">0</span></a></li>
+          <li><a class="activo" href="busqueda.html">Búsqueda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="seccion__titulo">Búsqueda de productos</h1>
+      <p class="subtitulo">Escribe lo que buscas, por ejemplo: <strong>camisas</strong>.</p>
+
+      <form id="form-busqueda" class="formulario-busqueda" action="#" method="get">
+        <div class="campo">
+          <label for="campo-busqueda">¿Qué estás buscando?</label>
+          <input type="search" id="campo-busqueda" name="q" placeholder="camisas, audífonos, mochila...">
+        </div>
+        <button type="submit" class="boton">Buscar</button>
+      </form>
+
+      <div id="resultados" class="resultados"></div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>Proyecto escolar &mdash; TecnoShop &copy; 2025</p>
+      <p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

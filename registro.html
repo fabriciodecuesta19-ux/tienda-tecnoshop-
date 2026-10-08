@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | TecnoShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">🛒 TecnoShop</a>
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="activo" href="registro.html">Registro</a></li>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito <span class="badge" id="contador-carrito">0</span></a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="seccion__titulo">Crear una cuenta</h1>
+      <p class="subtitulo">Completa todos los campos para registrarte en TecnoShop.</p>
+
+      <form id="form-registro" class="formulario" action="#" method="post">
+
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ana Martínez López">
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email"
+                 placeholder="ana@correo.com"
+                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                 title="Escribe un correo válido, por ejemplo: ana@correo.com">
+          <span class="campo__ayuda">Formato: usuario@dominio.com</span>
+        </div>
+
+        <div class="campo">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password"
+                 minlength="6" placeholder="Mínimo 6 caracteres">
+        </div>
+
+        <div class="campo">
+          <label for="fecha">Fecha de nacimiento</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono"
+                 pattern="[0-9]{10}" maxlength="10" inputmode="numeric"
+                 placeholder="5512345678"
+                 title="Ingresa 10 dígitos numéricos">
+        </div>
+
+        <div class="campo campo--check">
+          <input type="checkbox" id="terminos" name="terminos">
+          <label for="terminos">Acepto los términos y condiciones</label>
+        </div>
+
+        <button type="submit" class="boton" id="btn-registrar" disabled>
+          Registrarme
+        </button>
+
+        <p class="mensaje" id="mensaje-registro"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>Proyecto escolar &mdash; TecnoShop &copy; 2025</p>
+      <p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

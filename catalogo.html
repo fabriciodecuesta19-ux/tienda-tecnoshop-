@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | TecnoShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">🛒 TecnoShop</a>
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a class="activo" href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito <span class="badge" id="contador-carrito">0</span></a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="seccion__titulo">Catálogo de productos</h1>
+      <p class="subtitulo">Haz clic en "Agregar al carrito" para probar la interactividad.</p>
+
+      <p class="mensaje" id="aviso-catalogo"></p>
+
+      <div class="grid-productos">
+
+        <article class="producto">
+          <img src="https://placehold.co/400x300/dfe4ee/1f3c88?text=Audifonos" alt="Audífonos Bluetooth">
+          <div class="producto__info">
+            <h2 class="producto__nombre">Audífonos Bluetooth</h2>
+            <p class="producto__precio">$249.90</p>
+            <button type="button" class="boton boton--acento btn-agregar" data-nombre="Audífonos Bluetooth">Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="producto">
+          <img src="https://placehold.co/400x300/dfe4ee/1f3c88?text=Teclado" alt="Teclado mecánico">
+          <div class="producto__info">
+            <h2 class="producto__nombre">Teclado mecánico</h2>
+            <p class="producto__precio">$599.00</p>
+            <button type="button" class="boton boton--acento btn-agregar" data-nombre="Teclado mecánico">Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="producto">
+          <img src="https://placehold.co/400x300/dfe4ee/1f3c88?text=Mouse" alt="Mouse inalámbrico">
+          <div class="producto__info">
+            <h2 class="producto__nombre">Mouse inalámbrico</h2>
+            <p class="producto__precio">$189.50</p>
+            <button type="button" class="boton boton--acento btn-agregar" data-nombre="Mouse inalámbrico">Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="producto">
+          <img src="https://placehold.co/400x300/dfe4ee/1f3c88?text=Camisa" alt="Camisa casual">
+          <div class="producto__info">
+            <h2 class="producto__nombre">Camisa casual</h2>
+            <p class="producto__precio">$299.00</p>
+            <button type="button" class="boton boton--acento btn-agregar" data-nombre="Camisa casual">Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="producto">
+          <img src="https://placehold.co/400x300/dfe4ee/1f3c88?text=Mochila" alt="Mochila urbana">
+          <div class="producto__info">
+            <h2 class="producto__nombre">Mochila urbana</h2>
+            <p class="producto__precio">$450.00</p>
+            <button type="button" class="boton boton--acento btn-agregar" data-nombre="Mochila urbana">Agregar al carrito</button>
+          </div>
+        </article>
+
+        <article class="producto">
+          <img src="https://placehold.co/400x300/dfe4ee/1f3c88?text=Reloj" alt="Reloj inteligente">
+          <div class="producto__info">
+            <h2 class="producto__nombre">Reloj inteligente</h2>
+            <p class="producto__precio">$899.00</p>
+            <button type="button" class="boton boton--acento btn-agregar" data-nombre="Reloj inteligente">Agregar al carrito</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>Proyecto escolar &mdash; TecnoShop &copy; 2025</p>
+      <p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

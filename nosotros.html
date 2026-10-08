@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes somos | TecnoShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">🛒 TecnoShop</a>
+      <nav class="menu">
+        <ul class="menu__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a class="activo" href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="carrito.html">Carrito <span class="badge" id="contador-carrito">0</span></a></li>
+          <li><a href="busqueda.html">Búsqueda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="seccion__titulo">Quiénes somos</h1>
+      <p class="subtitulo">
+        Somos un equipo de estudiantes que desarrolló esta tienda en línea
+        como proyecto de la materia de Programación Web.
+      </p>
+
+      <table class="tabla">
+        <caption>Integrantes del equipo</caption>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Rol</th>
+            <th>Correo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fabricio De Cuesta Hernández</td>
+            <td>Líder de proyecto / HTML</td>
+            <td><a href="mailto:fabricio.decuesta@correo.com">fabricio.decuesta@correo.com</a></td>
+          </tr>
+          <tr>
+            <td>Kevin Monzón Pérez</td>
+            <td>Diseño y CSS</td>
+            <td><a href="mailto:kevin.monzon@correo.com">kevin.monzon@correo.com</a></td>
+          </tr>
+          <tr>
+            <td>Esdras González Vázquez</td>
+            <td>JavaScript e interactividad</td>
+            <td><a href="mailto:esdras.gonzalez@correo.com">esdras.gonzalez@correo.com</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="acciones">
+        <button type="button" class="boton boton--acento" id="btn-ver-mas">Ver más</button>
+      </p>
+
+      <div id="info-extra" class="info-extra" hidden>
+        <h2>Más sobre el proyecto</h2>
+        <p>
+          TecnoShop nació como una práctica para aplicar HTML, CSS y JavaScript.
+          Aprendimos a estructurar documentos, usar listas, tablas, imágenes,
+          formularios, el modelo de caja de CSS, selectores y a publicar un sitio
+          con GitHub Pages.
+        </p>
+        <h3>Nuestros valores</h3>
+        <ul class="lista-destacados">
+          <li>🤝 Trabajo en equipo</li>
+          <li>💡 Aprendizaje continuo</li>
+          <li>✅ Responsabilidad</li>
+          <li>🚀 Mejora constante</li>
+        </ul>
+        <h3>Datos de contacto</h3>
+        <p>Correo general: <a href="mailto:contacto@tecnoshop.com">contacto@tecnoshop.com</a></p>
+        <p>Ciudad de México, México</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>Proyecto escolar &mdash; TecnoShop &copy; 2025</p>
+      <p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
